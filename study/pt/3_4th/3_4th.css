@@ -1,0 +1,28 @@
+h3{
+	color: aquamarine;
+	color: #6c9ef8;
+	color: rgb(108, 158, 248);
+	color: rgba(108, 158, 248, 1);
+	
+	font-size: 3px;
+	font-size: 3em;
+	
+	font-family: sans-serif;
+	font-family: "Nanum Gothic","나눔고딕",'Noto Sans CJK KR', helvetica, sans-serif;
+	
+	font-weight: lighter;
+	font-weight: normal;
+	font-weight: bold;
+	
+	font-weight: 400;
+	
+	letter-spacing: 0.025em;
+	
+}
+
+p{
+	font-size: 20px;
+	
+	line-height: 10px;
+	line-height: 1.5;
+}

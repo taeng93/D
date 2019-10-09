@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>hello!</title>
+</head>
+<body>
+  <input type="text" placeholder="type number 01" id="number01">
+  <input type="text" placeholder="type number 02" id="number02">
+
+  <ul>
+    <li class="pluse">+</li>
+    <li class="minus">-</li>
+    <li class="multiple">x</li>
+    <li class="divide">/</li>
+  </ul>
+
+  <h1 class="answer">answer</h1>
+  
+<script>
+  // get number
+  const numb01 = document.querySelector('#number01');
+  const numb02 = document.querySelector('#number02');
+
+  function add(numb01, numb02){
+    // string to number;
+    numb01 *= 1;
+    numb02 *= 1;
+    
+    return numb01 +numb02;
+  }
+  function sub(number1, number2){
+    return number1-number2;
+  }
+  function div(number1, number2){
+    return number1/number2;
+  }
+  function mul(number1, number2){
+    return number1*number2;
+  }
+
+  function handleClickPluse(){
+    document.querySelector('.answer').innerHTML = add(numb01.value, numb02.value)
+  }
+
+  const pluse = document.querySelector('.pluse');
+  pluse.addEventListener('click', handleClickPluse)
+
+</script>
+
+</body>
+</html>

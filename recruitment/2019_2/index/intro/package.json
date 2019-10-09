@@ -1,0 +1,20 @@
+{
+  "name": "D-semicolon_webposter_2019_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "webpack",
+    "devserver": "webpack-dev-server --open --progress"
+  },
+  "keywords": [],
+  "author": "grizzle",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-loader": "8.0.6",
+    "babel-preset-env": "1.7.0",
+    "webpack": "4.39.3",
+    "webpack-dev-server": "3.8.0"
+  }
+}

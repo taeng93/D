@@ -1,0 +1,244 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	font-family: "Rubik", sans-serif;
+	font-size: 1.6pt;
+}
+/*transition*/
+.tran{
+	transition: all 0.2s ease-in-out;
+}
+h3{
+	font-size: 1.5rem;
+}
+
+.con{
+	width: 70%;
+	margin: auto;
+}
+
+.sec{
+	width: 100%;
+}
+
+.sec01{
+	background-image: url(img/slider_5.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+/*header*/
+header{
+	color: white;
+	padding-top: 30px;
+	height: 36px;
+	line-height: 36px;
+}
+header:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+header h3{
+	float: left;
+}
+nav{
+	float: right;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+nav a{
+	color: white;
+}
+nav li{
+	float: left;
+	margin-left: 30px;
+	box-sizing: border-box;
+}
+nav .active{
+	border-bottom: 2px solid white;
+	
+}
+
+/*section01 text*/
+.sec01-text{
+	text-align: center;
+	color: white;
+	margin-top: 200px;
+}
+
+.sec01-text h2{
+	font-size: 4rem;
+}
+
+.sec01-text p{
+	font-size: 1.2rem;
+	opacity: 0.8;
+}
+
+.sec01-text button{
+	background-color: transparent;
+	border: 0;
+	padding: 15px 20px;
+	border: 2px solid white;
+	border-radius: 80px;
+	margin: 30px 0;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1rem;
+	cursor: pointer;
+	font-weight: 300;
+	
+}
+.sec01-text button:hover{
+	color: #f4bd00;
+	background-color: white;
+}
+
+/*slie icon show*/
+
+
+/*section 02*/
+.left50{
+	width: 50%;
+	float: left;
+}
+.right50{
+	width: 50%;
+	float: right;
+}
+
+.sec02 h2{
+	height: 150px;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 150px;
+}
+
+.sec02-list{
+	background-color: #161C2E;
+}
+.sec02-list section{
+	height: 600px;
+}
+.sec02-list section:last-child{
+	height: 700px;
+}
+
+.sec02-img{
+	height: 100%;
+	background-size: 130%;
+	background-position: center;
+	
+	transition: all 0.5s ease-in-out;
+}
+
+.sec02 section:hover .sec02-img{
+	background-size: 150%;
+}
+
+.sec02-img01{
+	background-image: url(img/slider_7.jpg);
+}
+
+.sec02-img02{
+	background-image: url(img/slider_6.jpg);
+}
+
+.sec02-img03{
+	background-image: url(img/slider_2.jpg);
+}
+
+.textWrap{
+	width: 80%;
+	margin: auto;
+	margin-top: 60px;
+}
+
+.sec02-text{
+	color: white;
+}
+.sec02-sub{
+	font-weight: 300;
+	font-size: 1rem;
+	opacity: 0.5;
+	color: rgba(255,255,255,0.5);
+}
+.sec02-text h4{
+	font-weight: 700;
+	line-height: 1.5;
+	font-size: 1.8rem;
+	margin-bottom:30px;
+}
+.sec02-p{
+	font-weight: 300;
+	font-size: 0.8rem;
+	opacity: 0.8;
+	line-height: 1.8;
+	padding-right: 30px;
+	
+	color: rgba(255,255,255,0.8);
+	margin-bottom: 24px;
+}
+
+.sec02-text button{
+	font-size: 1rem;
+	text-transform: capitalize;
+	background-color: transparent;
+	padding: 15px;
+	border: 2px solid rgba(255,255,255,0.5);
+	border-radius: 60px;
+	color: white;
+	cursor: pointer;
+}
+
+.sec02-text button:first-of-type{
+	margin-right: 30px;
+}
+
+.sec02-text .yellow-btn{
+	background-color: #f4bd00;
+	color: white;
+	border: none;
+}
+
+.white-btn:hover{
+	border: 2px solid #f4bd00;
+	color: #f4bd00;
+}
+
+/*2collayout*/
+.sec02-col2{
+	width: 100%;
+}
+.sec02-col2 li{
+	float: left;
+	width: 50%;
+	position: relative;
+	margin-bottom: 60px;
+}
+.sec02-col2 h4{
+	position: absolute;
+	font-size: 4rem;
+	color: rgba(255,255,255,0.1);
+	font-weight: 700;
+	left: -30px;
+	top: -50px;
+}
+
+.sec02-col2 h3{
+	font-weight: 300;
+	font-size: 1.5rem;
+}
+
+
+
+
+
+

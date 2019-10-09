@@ -1,0 +1,144 @@
+*{
+	margin: 0; 
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	background-color: lightgray;
+	position: relative;
+}
+h1{
+	margin-top: 30px;
+}
+
+.title{
+	font-size: 30px;
+	text-decoration: underline;
+	margin: 30px 0;
+	color: black;
+}
+
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+footer{
+	background-color: black;
+	height: 50px;
+	color: white;
+	text-align-last: center;
+	line-height: 50px;
+	font-size: 10px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+/*-------------01. div-----------*/
+
+.divWrapper{
+ 	width: 1080px;
+	margin: auto;
+}
+
+.divWrapper:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.divSpan{
+	width: 300px;
+	height: 300px;
+	background-color: steelblue;
+	margin: 0 30px;
+	float: left;
+}
+
+.divBg{
+	background-color: lightblue;
+	height: 300px;
+	padding: 50px 0;
+}
+
+/*-------------02. span-----------*/
+span{
+	font-size: 30px;
+	font-weight: bolder;
+	color: steelblue;
+}
+
+/*-------------03. text-algin-----------*/
+.align{
+	height: 300px;
+	background-color: white;
+	padding: 10px;
+}
+.align p:first-child{
+	font-weight: bolder;
+	font-size: 30px;
+	text-align: center;
+	text-align: left;
+	text-align: right;
+}
+
+/*채우기*/
+.align p:last-child{
+	width: 200px;
+	text-align: justify;
+}
+
+/*-------------04. background-image-----------*/
+.BgImage{
+	height: 500px;
+	width: 1000px;
+	background-image: url(img/bg.jpg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.BgImage02{
+	width: 100%;
+	height: 800px;
+	background-image: url(img/bg.jpg);
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	background-attachment: fixed;
+	
+}
+.BgImage03{
+	height: 1000px;
+}
+
+/*-------------05. position-----------*/
+
+.list-wrapper{
+	width: 1080px;
+	margin: 0 auto;
+}
+.list-wrapper:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.list{
+	width: 300px;
+	height: 300px;
+	background-color: cadetblue;
+	float: left;
+	margin: 0 30px;
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.stamp{
+	width: 100px;
+	position: absolute;
+	top: -20px;
+	right: -20px;
+}

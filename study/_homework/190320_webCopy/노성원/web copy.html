@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rohsungwon-project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        .header {
+            width: 80%;
+            margin: 70px auto;
+        }
+
+        .name {
+            color: darkgreen;
+            display: inline-block;
+            float: left;
+            font-size: 20pt;
+            font-family: serif;
+            font-weight: 900;
+            border-bottom: 1px solid darkgreen;
+        }
+        .name:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .menu {
+
+            float: right;
+        }
+        
+        .menu:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        li {
+            font-family: serif;
+            font-weight: 600;
+            
+            display: inline-block;
+            float: left;
+            padding: 20px 0 20px 50px;
+            font-size: 12pt;
+        }
+			
+			li a{
+				color: darkgreen; /*왜 색이 안 먹죠?*/
+			}
+        li:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        li:hover {
+            
+            text-decoration: underline;
+        }
+
+        .contents {
+            width: 80%;
+            margin: 40px auto;
+        }
+        
+        .wrapper {
+/*					margin-top: 300px;*/
+					padding-top: 100px; /*왜 마진으로 하면 안먹을까?*/
+        }
+
+        .pjt {
+					width: 50%;
+					height: 580px;
+					background-size: cover;
+					float: left;
+					color: transparent;
+					opacity: 0.5; /*이미지 오퍼시티가 주고싶어요 안돼..*/
+        }
+			
+        .pjt:hover {
+            cursor: pointer;
+            background-image: url(img/logo5.jpg);
+        }
+
+        .pjt01 {background-image: url(img/1.jpg);}
+        .pjt02 {background-image: url(img/2.jpg);}
+        .pjt03 {background-image: url(img/3.jpg);}
+        .pjt04 {background-image: url(img/5.jpg);}
+        .pjt05 {background-image: url(img/4.jpg);}
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="" class="name">Roh Sung Won</a>
+        <ul class="menu">
+            <li><a href="" class="Contact">Contact</a></li>
+            <li><a href="" class="Project">Project</a></li>
+            <li><a href="" class="Behance">Behance</a></li>
+            <li><a href="" class="instagram">instagram</a></li>
+            <li><a href="" class="Resume">Resume</a></li>
+        </ul>
+    </div>
+
+    <div class="contents">
+        <div class="wrapper">
+            <div class="pjt pjt01">1</div>
+            <div class="pjt pjt02">2</div>
+            <div class="pjt pjt03">3</div>
+            <div class="pjt pjt04">4</div>
+            <div class="pjt pjt05">5</div>
+        </div>
+
+        <!-- 백그라운드 이미지로 할지 이미지태그로 넣어야할지 구분이 안된다.
+           
+            <div class="pjt pjt01"><img src="img/1.jpg" alt="" class="img01"></div>
+            <div class="pjt pjt02"><img src="img/2.jpg" alt="" class="img02"></div>
+            <div class="pjt pjt03"><img src="img/3.jpg" alt="" class="img03"></div>
+            <div class="pjt pjt04"><img src="img/4.jpg" alt="" class="img04"></div>
+            <div class="pjt pjt05"><img src="img/5.jpg" alt="" class="img05"></div>
+-->
+
+    </div>
+
+</body>
+
+<script>
+
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

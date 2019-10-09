@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFBE08;
+    overflow: hidden;
+}
+
+
+
+.white {
+    width: 80vw;
+    height: 95vh;
+    background-color: white;
+    position: absolute;
+    top: 2.5vh;
+    right: 0;
+    transition: all .8s ease-in-out;
+
+    /*    시간이 되었을 때 */
+    /*    width: 40vw;*/
+}
+
+
+
+.mini {
+    position: absolute;
+    bottom: 0;
+    left: -215px;
+    width: 260px;
+}
+
+.mini img {
+    width: 100%;
+    display: none;
+}
+
+.mini .mini-visible {
+    display: block
+}
+
+
+
+.wrap {
+    width: 65vw;
+    height: 70vh;
+    color: #707070;
+    position: absolute;
+    top: 13vh;
+    left: 7.5vh;
+}
+
+.wrap img {
+    width: 15vh;
+    position: relative;
+}
+
+h3 {
+    font-size: 5.5vh;
+    font-weight: normal;
+    margin: 3vh 0 4vh 0;
+}
+
+.light {
+    font-weight: lighter;
+    margin-top: 1.5vh;
+    font-size: 2.3vh;
+    color: #707070;
+    line-height: 1.8;
+}
+
+.regular {
+    margin-top: 4vh;
+    font-size: 2.6vh;
+}
+
+#yellow {
+    color: #FFBE08;
+}
+
+.floor {
+    position: absolute;
+    font-size: 1.5vh;
+    font-weight: lighter;
+    right: 0;
+    opacity: 0.5;
+    bottom: -10vh;
+}
+
+@media all and (max-width:415px) {
+
+    @keyframes moving {
+        from {
+            left: -46vw;
+        }
+
+        to {
+            left: 92vw;
+        }
+
+    }
+
+    .mini {
+        width: 40vw;
+        height: 20vw;
+        top: -8vh;
+        animation-name: moving;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+        animation-delay: 0.8s;
+        animation-iteration-count: infinite;
+    }
+
+    .mini .mini-visible {
+        display: none;
+    }
+
+    .mini .mini-mobile {
+        display: block;
+    }
+
+    .white {
+        width: calc(100vw - 6vh);
+        height: 77vh;
+        position: absolute;
+        top: 20vh;
+        right: 3vh;
+    }
+
+    .wrap {
+        width: 65vw;
+        height: 55vh;
+        position: absolute;
+        top: 13vh;
+        left: 6vh;
+    }
+
+
+    .wrap img {
+        display: none;
+    }
+
+    h3 {
+        font-size: 4vh;
+        margin-top: 0;
+    }
+    
+
+    .floor {
+        bottom: 82vh;
+        color: white;
+        width: 90vw;
+        right: -23vw;
+        font-size: 3vw;
+    }
+}

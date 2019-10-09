@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    overflow: hidden;
+    overscroll-behavior-y: contain;
+}
+
+body {
+    width: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.hide-opacity{
+    opacity: 0;
+}
+.show-opacity{
+    opacity: 1;
+}
+
+.display-none{
+    display: none;
+}
+
+.display-block{
+    display: block;
+}
+
+.intro{
+    transition: opacity .5s ease-in-out;
+}
+
+.contents{
+    transition: opacity .5s ease-in-out;
+}
+
+.intro header {
+    text-align: center;
+    font-size: 90px;
+}
+
+/*브라켓*/
+.intro .header {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 35vh;
+    margin-bottom: 29vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.intro .bracket {
+    display: flex;
+    align-items: center;
+}
+
+.intro .bracket p {
+    margin: 0;
+    position: relative;
+    top: -5px;
+}
+
+.intro .blank {
+    display: flex;
+}
+
+
+.intro .dddd {
+    width: 70px;
+    height: 100px;
+    position: relative;
+    left: 8px;
+}
+
+
+.intro .dddd img {
+    position: absolute;
+    width: 70px;
+    top: 0;
+    left: 0;
+
+}
+
+.intro .semi {
+    width: 40px;
+    height: 100px;
+    position: relative;
+    left: 2px;
+
+}
+
+.intro .semi img {
+    position: absolute;
+    width: 40px;
+    top: 0;
+    left: 0;
+}
+
+.intro .invisible {
+    display: none;
+}
+
+.intro .alpha-wrap{
+    position: absolute;
+    width: 100vw;
+    height: 200px;
+    bottom: 80px;
+    /* overflow: hidden; */
+}
+
+.intro .alphabet {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+}
+
+.intro .wrap {
+    width: 90%;
+    height: 90px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.intro .alphabet img {
+    width: 90px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.intro .wrap .character{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.intro .wrap .fill {
+    cursor: pointer;
+    width: 70px;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+.intro .wrap .fill_semi {
+    cursor: pointer;
+    width: 40px;
+    position: relative;
+}
+
+
+.intro .zIndex {
+    z-index: 10;
+}
+
+
+
+
+.intro .floor {
+    position: absolute;
+    width: 100vw;
+    height: 125px;
+    background-color: #FFBE08;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+        
+.intro .wrap .none {
+    display: none;
+}
+
+.intro .wrap  .middle {
+    display: none;
+}
+
+
+
+.intro .wrap {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.intro footer p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 80px;
+    color: white;
+}
+
+@media (min-width:415px) {
+    .intro .header {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 35vh;
+        margin-bottom: 29vh;
+        color: black;
+        display: flex;
+        justify-content: center;
+    }
+
+    .intro .wrap  .middle {
+        display: block;
+    }
+
+    .intro .wrap {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+
+
+@media (min-width:1024px) {
+    .intro .wrap {
+        width: 90%;
+        height: 90px;
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+    }
+
+        
+    .intro .wrap .none {
+        display: block;
+    }
+
+    .intro .wrap  .middle {
+        display: block;
+    }
+
+    
+.intro .wrap .character:hover {
+    bottom: 20px;
+    transition: all ease-in-out .2s;
+}
+    
+
+}

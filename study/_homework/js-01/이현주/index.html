@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>bear</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="tree">
+      <img src="bear-05.svg" alt="">
+    </div>
+    <div class="apple touched">
+      <img src="bear-04.svg" alt="">
+    </div>
+    <div class="bear">
+      <img src="bear-02.svg" alt="">
+    </div>
+    <div class="bear bar move">
+      <img src="bear-03.svg" alt="">
+    </div>
+  </div>
+
+  <script>
+    let bear = document.querySelector(".bear");
+    let bar = document.querySelector(".bar");
+    let apple = document.querySelector(".apple");
+    let move = document.querySelector(".move");
+    let touched = document.querySelector(".touched");
+    var count = 0;
+    // - 명령어 만들기
+    function wantApple() {
+      bar.classList.toggle('move');
+      apple.classList.toggle('touched');
+      
+      count = count + 1;
+
+      if (count == 15) {
+        apple.style.bottom = "-220px";
+      }
+    }
+
+    // 클릭했을 때 어떤 명령어가 실행될 지 지정하기.
+    bar.onclick = wantApple;
+  </script>
+</body>
+
+</html>

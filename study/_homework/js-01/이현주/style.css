@@ -1,0 +1,62 @@
+body{
+    background-color: beige;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap{
+    position: relative;
+    /* border: solid black 1px; */
+    width: 350px;
+    height: 500px;
+    margin: 50px auto;
+}
+
+.tree{
+    width: 350px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.apple{
+    width: 350px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all ease-in-out 0.3s;
+}
+
+.touched{
+    transform: rotate(10deg);
+    right: 10px;
+    bottom: -5px;
+}
+
+.bear{
+    position: absolute;
+    width: 350px;
+    bottom: 0;
+    left: 0;
+}
+
+.bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.move{
+    left: -10px;
+    bottom: 10px;
+    transform: rotate(-5deg);
+  }
+
+/* .bar:hover {
+  left: -10px;
+  bottom: 10px;
+  transform: rotate(-5deg);
+} */

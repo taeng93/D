@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Loading</title>
+</head>
+
+<style>
+	* {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-decoration: none;
+	}
+
+	body {
+		background-image: url(backimg.png);
+		overflow: hidden;
+	}
+
+
+	.center {
+		text-align: center;
+		position: absolute;
+		width: 100%;
+		color: white;
+		top: 35%;
+	}
+
+	.center img {
+		width: 150px;
+	}
+
+	.center p {
+		font-size: 20px;
+		letter-spacing: 10px;
+		padding: 10px;
+		opacity: 0.7;
+	}
+
+	.center li {
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+		background-color: white;
+		opacity: 0.4;
+		float: left;
+		margin: 10px;
+	}
+
+	.center ul {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -40px;
+	}
+
+	.box {
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+		background-color: white;
+		position: absolute;
+		left: 480px;
+		z-index: 100;
+		top: 210px;
+
+	}
+</style>
+
+<body>
+	<div class="center">
+		<img src="logo.png" alt="로고">
+		<p>WAIT PLEASE</p>
+
+		
+<!--		<div class="box"></div>-->
+		
+		<ul>
+			<li class="cir"></li>
+			<li class="cir"></li>
+			<li class="cir"></li>
+			<li class="cir"></li>
+			<li class="cir"></li>
+
+		</ul>
+	</div>
+
+</body>
+
+<script>
+	var boxLeft = 480;
+	var boxStatus = 0;
+	var num = 0;
+//
+//
+//	function move() {
+//
+//		if (boxLeft == 820) {
+//			boxStatus = 480;
+//
+//
+//		} else if (boxLeft == 0) {
+//			boxStatus = 0;
+//
+//		}
+//
+//		if (boxStatus == 0) {
+//			boxLeft = boxLeft + 30;
+//
+//
+//		} else {
+//			boxLeft = boxLeft - 30;
+//
+//		}
+//
+//
+//		var box = document.querySelector(".box");
+//		box.style.left = boxLeft + "px";
+//		console.log("boxLeft:" + boxLeft);
+//		console.log(boxStatus);
+//	}
+	
+	function loading(){
+		var cir = document.querySelectorAll(".cir");
+		
+		for(var i=0; i<cir.length; i++){
+			
+			cir[i].style.opacity = "0.4";
+			
+		}
+		
+		cir[num].style.opacity = "1";
+		
+		num++;
+		
+		if(num==cir.length){
+			num=0;
+		}
+	}
+
+	setInterval(function() {
+//		move();
+		console.log("num: " + num);
+		loading();
+	}, 500)
+</script>
+
+</html>

@@ -1,0 +1,153 @@
+/* CSS RESET */
+* {
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	background-color: #f2f2f2;
+}
+
+/* TEXT DESIGN */
+
+body {
+	font-size: 16px;
+	line-height: 1;
+	font-family: "Noto Sans CJK KR", sans-serif;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+
+/* HEADER DESIGN */
+
+header {
+	width: 100%;
+	height: 592px;
+	background-image: url(images/backbround.png);
+}
+
+header h1 {
+	padding: 270px 0 260px 0;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	font-size: 80px;
+	font-family: "Helvetica LT", sans-serif;
+}
+
+.header_gnb {
+	float: right;
+	color: #fff;
+	margin: 50px 50px 0 0;
+	font-weight: bold;
+	font-family: "Helvetica LT", sans-serif;
+}
+
+.header_gnb li {
+	float: left;
+	margin-left: 50px;
+}
+
+.header_gnb a:link {
+	color: #fff;
+}
+
+.header_gnb a:visited {
+	color: #fff;
+}
+
+.header_gnb a:hover {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+
+.header_logo {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+
+
+/* section DESIGN */
+
+section {
+	width: 1180px;
+	margin: auto;
+	height: 440px;
+	padding-top: 100px;
+	margin-bottom: 100px;
+}
+
+section a:link {
+	color: #000;
+}
+
+section a:visited {
+	color: #000;
+}
+
+section h2 {
+	font-size: 30px;
+}
+
+section ul {
+	margin-top: 30px;
+}
+
+section li {
+	float: left;
+	width: 380px;
+	height: 380px;
+	background-color: #fff;
+	margin-right: 20px;
+}
+
+section li:last-child {
+	margin-right: 0;
+}
+
+
+section h3 {
+	padding: 40px 0 10px 40px;
+}
+
+section p {
+	padding-left: 40px;
+}
+
+/* FOOTER DESIGN */
+
+footer {
+	clear: both;
+	height: 140px;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: "Helvetica LT", sans-serif;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+}
+
+.footer_logo {
+	margin-top: 40px;
+}
+
+footer p {
+	margin-top: 20px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script Study_1 Home Work</title>
+    <title>숙제</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        .wrap {
+            width: 200px;
+            margin: 35vh 42.5vw;
+            text-align: center;
+        }
+
+
+        .box {
+            height: 200px;
+        }
+
+        .metaa {
+            background-image: url(img/meta1.svg);
+        }
+
+        .metab {
+            background-image: url(img/meta2.svg);
+        }
+
+        .metac {
+            background-image: url(img/meta3.svg);
+        }
+
+        .metad {
+            background-image: url(img/meta4.svg);
+        }
+
+        .wrap p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="metaa box"></div>
+        <p>click me!</p>
+    </div>
+
+    <script>
+        let meta = document.querySelector(".box");
+        let count = 1;
+
+        function clickMeta() {
+
+            count = count+1;
+            if(count==5){
+                count =1;
+            }
+            meta.style.backgroundImage = "url(img/meta"+count+".svg)";
+
+        }
+
+        meta.onclick = clickMeta;
+    </script>
+</body></html>

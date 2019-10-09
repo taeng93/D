@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TOGLE-HW</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Noto+Sans+KR" rel="stylesheet">
+
+
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Nanum Myeongjo', serif;
+}
+        body{
+            background-color: #f7cdcd;
+        }
+        .con{
+            width: 80%;
+            margin: auto;
+            position: relative;
+        }
+        a{
+            font-size: 25pt;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 800;
+        }
+        .picture{
+            height: 0px;
+/*						height: 200px;*/
+            padding-top: 50px;
+            overflow: hidden;
+            transition:all .3s ease-in-out;}
+        
+        .pic-label {
+            position: absolute;
+            left: 0;
+            top: 100;
+            border: 1px solid black;
+        }
+        
+        #pic-toggle:checked ~.picture{
+            height: 200px;
+        }
+        
+        
+    </style>
+</head>
+
+
+
+<body>
+    <div class="con">
+        <input type="checkbox" id="pic-toggle">
+        <label for="pic-toggle" id="pic-label">
+            <a name="show" class="pic-show">사진 보이기</a>
+            <a name="hide" class="pic-hide">사진 넣어두기</a>
+        </label>
+        
+        <div class="picture">
+					<img src="corea.jpg">
+			</div>
+
+    </div>
+    
+    
+    
+    <h1>하나 된 만세</h1>
+    <br>
+    <br>
+    <p>
+        1919년 1월 18일 1차 세계대전의 전후 처리를 위한 파리강화회의가 개막되었다.
+        사흘 후인 1월 21일에는 고종 황제가 급사했다.
+        <br>
+        국내외 정세가 격변하자, 이때를 맞아 한국인의 독립 의지를
+        세계에 알리고자 하는 움직임이 활발히 일어났다.
+        <br>
+        상하이에서는 신한청년당이 파리강화회의에 김규식을 파견했다.
+        일본에서는 2월 8일 도쿄 유학생들이 2.8독립선언서를 발표했다.
+        국내에서는 종교계와 학생들이 독립선언을 준비했다.
+        <br>
+        1919년 3월 1일 서울을 비롯해 평양·진남포 ·안주(평안남도),
+        의주·선천(평안북도), 원산(함경남도)에서
+        독립선언식과 만세시위가 일어났다.
+        7개 도시 모두에서 천도교, 기독교, 불교 지도자들이
+        민족대표 33인의 이름으로 발표한 기미독립선언서가 낭독되었다.
+        <br>
+        3월 1일 이후 북부지방을 중심으로 만세시위가 연이어 일어났고,
+        3월 중순을 넘어서는 전국으로 확대되었다.
+        <br>
+        3.1운동은 도시와 농촌 가리지 않고
+        누구든 조직하고 참여하는 자발성에 힘입어 두 달 넘게 이어졌다.
+    </p>
+</body>
+
+</html>

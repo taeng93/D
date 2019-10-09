@@ -1,0 +1,25 @@
+p {
+	color: crimson;
+	/*
+				color: #AC58FA;
+				color: rgb(255,10,10);
+				color: rgba(255,10,10, 0.3);	
+*/
+	font-size: 40pt;
+
+	font-family: "Nanum Gothic", "나눔고딕", 'Noto Sans CJK KR', helvetica, sans-serif;
+	/*				font-family: serif;*/
+	font-weight: 300;
+	font-weight: 400;
+	font-weight: 600;
+	font-weight: 900;
+
+	font-weight: bolder;
+
+	letter-spacing: -0.025em;
+
+	line-height: 1.5;
+
+	font-style: italic;
+	text-decoration: underline;
+}

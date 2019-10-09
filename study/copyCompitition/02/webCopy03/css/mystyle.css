@@ -1,0 +1,226 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+/*	box-sizing: border-box;*/
+}
+
+body{
+/*	background-color: gray;*/
+}
+
+img{
+	vertical-align: bottom;
+}
+
+header{
+	background-color: white;
+	height: 80px;
+}
+nav li{
+	float: left;
+	margin: 20px;
+}
+
+nav{
+	position: absolute;
+	right: 0;
+	margin: 20px 40px 0 0;
+	
+}
+
+.con{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.header-logo{
+	color: black;
+	font-size: 16pt;
+	font-weight: 900;
+	
+	line-height: 80px;
+	float: left;
+}
+
+#header-menu{
+	float: right;
+	font-size: 40px;
+	margin: 20px 0;
+}
+
+.nav{
+	height: 500px;
+	background-image: url(../images/header-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-white{
+	width: 550px;
+	height: 180px;
+	background-color: white;
+	border: 10px solid whitesmoke;
+	
+	text-align: center;
+}
+
+.text-wrap{
+	margin-top: 58px;
+}
+
+.nav-white h3{
+	font-size: 18pt;
+	letter-spacing: 2pt;
+	margin-bottom: 18px;
+}
+
+.nav-white p{
+	font-size: 10pt;
+	color: gray;
+}
+
+/*section02*/
+.cata{
+	display: flex;
+	justify-content: center;
+}
+
+.cata-title{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.cata-title li{
+	float: left;
+	margin: 0 10px;
+	padding: 10px 20px;
+	
+	text-transform: uppercase;
+	font-size: 8pt;
+	color: gray;
+	
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+}
+
+.cata-title li:hover{
+	background-color: black;
+	color: white;
+}
+
+.list-wrap{
+	width: 100%;
+	
+}
+
+.list-wrap li{
+	float: left;
+	width: 33.3%;
+	
+	position: relative;
+/*	border: 2px solid red;*/
+}
+
+.list-wrap li img{
+	width: 90%;
+	padding: 5% 5%;
+}
+
+.list-wrap:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.test{
+	height: 80px;
+	background-color: aqua;
+}
+
+/*
+.list_cover{
+	background-color: black;
+	opacity: 0;
+	
+	width: 90%;
+	height: 90%;
+	
+	position: absolute;
+	left: 5%;
+	top: 5%;
+	
+	transition: all 0.3s ease-in-out;
+}*/
+
+/*.list-wrap li:before{
+	content: "";
+	display: block;
+	
+	background-color: black;
+	opacity: 1;
+	
+	width: 90%;
+	height: 90%;
+	
+	position: absolute;
+	left: 5%;
+	top: 5%;
+	
+	transition: all 0.3s ease-in-out;
+}*/
+
+.list-wrap li:hover .list_cover{
+	opacity: 0.8;
+}
+
+#list-link{
+	font-size: 32pt;
+	color: black;
+	
+	background-color: white;
+	border-radius: 100%;
+	
+	padding: 10pt;
+	
+/*	absolute로 가운데 위치 잡기*/
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	
+	width: 100%;
+	text-align: center;
+	bottom: 25%;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

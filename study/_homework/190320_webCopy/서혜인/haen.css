@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #FAFAFA;    
+}
+
+header{
+    width: 100vw;
+    height: 70px;
+    border-bottom: 1px solid lightgrey;
+    background-color: white;
+}
+
+header div{
+    width: 70vw;
+    margin: auto;
+}
+
+header img{
+    width: 30px;
+    padding-right: 20px;
+    margin-top: 25px;
+    border-right: 1px solid black;
+    float:left; 
+}
+
+h1{
+    font-size: 20px;
+    margin: 30px;
+    float:left; 
+    
+}
+
+header nav{
+    position: absolute;
+    right: 10%;
+    
+}
+
+header nav ul li{
+    font-size: 24px;
+    float: left;
+    padding: 28px;
+    opacity: 0.7;
+    
+}
+
+/*____________________________________________________________________*/
+
+.proff{
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    top: 80px;
+    left: 10%;
+}
+
+.proff img{
+    width: 150px;
+    padding: 100px;
+    float: left;
+}
+
+.profile{
+    padding-top: 100px;
+}
+
+.profile h2{
+    font-weight: 300;
+    font-size: 30px;
+    float: left;
+}
+
+
+
+.fallow{
+    
+    display: inline;
+    padding: 5px 10px;
+    border: 1px solid lightgrey;
+    border-radius: 10%;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    
+}
+
+.aaa{
+    position: absolute;
+    left: 350px;
+    top: 150px;
+}
+
+.bold{
+    font-weight: 600;
+    padding-right: 50px;
+}
+
+.aaa .boldd{
+    padding-top: 20px;
+    font-weight: 600;
+}
+
+.aaa p{
+    line-height: 1.5;
+}
+
+/*____________________________________________________________________*/
+
+.pnav{
+    width: 70vw;
+    height: 50px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    position: absolute;
+    top: 410px;
+    right: 15vw;
+}
+
+.pnav li{
+    float: left;
+    font-size: 13px;
+    padding: 18px 0;
+    margin: 0 30px;
+    color: darkgrey;
+    position: relative;
+    left: 30%
+}
+
+.pnav li:hover{
+    color: dimgrey;
+    border-top: 1.2px solid dimgrey;
+    
+}
+
+.pnav .dark{
+    color: dimgrey;
+    border-top: 1.2px solid dimgrey;  
+}
+
+/*____________________________________________________________________*/
+
+
+.dddd{
+    width: 70vw;
+    position: absolute;
+    top: 470px;
+    right: 15vw;
+}
+
+.arti li{
+    width: 30%;
+    height: 330px;
+    margin: 1.65%;
+    background-color: gray;
+    float: left;
+}
+
+body{
+/*	background-color: black;*/
+}
+
+/*____________________________________________________________________*/
+
+footer{
+    width: 70vw;
+    position: absolute;
+    top: 2200px;
+    right: 15vw;
+}
+
+footer p{
+    position: relative;
+    left: 31vw;
+    color: lightslategrey;
+    padding-bottom: 100px;
+}
+
+@media screen and (max-width: 800px){
+	.arti li{
+    width: 100%;
+	}
+}
+

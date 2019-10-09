@@ -1,0 +1,110 @@
+/* 목록 타입 변경 */
+li {
+    list-style: disc;
+    list-style: circle;
+    list-style: square;
+    list-style: none;
+}
+
+/* 폰트 밑줄 변경 */
+a {
+    text-decoration: underline;
+    text-decoration: line-through;
+    text-decoration: overline;
+    text-decoration: none;
+}
+
+/* 배경 색상 변경 */
+p {
+    background-color: red;
+    background-color: #ff0000;
+    background-color: rgb(255,0,0);
+}
+
+/* 블록요소 width, height 기본값 */
+p {
+    background-color: cornflowerblue;
+    width:100%;  /*변경가능*/
+    height:auto; /*변경가능*/
+}
+
+/* 인라인요소 width, height 기본값 */
+a {
+    background-color: cornflowerblue;
+    width:auto;  /*변경불가*/
+    height:auto; /*변경불가*/
+}
+
+/* padding */
+p {
+    background-color: cornflowerblue;
+    width: 500px;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding:  10px 20px;
+    padding: 20px 0 30px 15px;
+    
+}
+
+/* border와 margin */
+p {
+    background-color: cornflowerblue;
+    width: 500px;
+    padding-top: 20px;
+    
+    border: 1px solid red;
+    margin: 20px;
+}
+
+/* border와 margin */
+p {
+    background-color: cornflowerblue;
+    width: 500px;
+}
+
+a {
+    background-color: #fff;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+/* CSS reset */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+a {text-decoration: none;}
+li {list-style: none;}
+
+/* class 개념 */
+.a {color: red;}
+.b {color: orange;}
+.c {color: blue;}
+
+.a {color: red;}
+
+/* css의 우선순위 */
+.a {color: blue;}
+p {color: red;}
+
+/* 하위 선택자 */
+section p {color: red;}
+p {color: blue;}
+
+section ul li {color: red;}
+section li {color: red;}
+
+.recommend-wrap h2 {
+    color: red;
+}
+
+.item h2 {color: red;}
+.item p {color: blue;}
+.item .price {color: orange;}
+
+

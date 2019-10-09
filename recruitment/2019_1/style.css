@@ -1,0 +1,220 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+	font-family: 'Bodoni';
+	src: url(font/BOD_B.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Dejavu';
+	src: url(font/DejaVuSerif.ttf) format('truetype');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Dejavu';
+	src: url(font/DejaVuSerif-Bold.ttf) format('truetype');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Dejavu';
+	src: url(font/DejaVuSerif-Italic.ttf) format('truetype');
+	font-style: italic;
+}
+
+body{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    background-color: #f8f5f5;
+    overflow: hidden;
+}
+
+
+#wrapper{
+    width: 60%;
+    height: 60vh;
+    margin: 20vh auto;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+
+    display: flex;
+    display: block;
+    text-align: left;
+
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    user-select:none;
+    transition: all .3s ease-in-out;
+
+}
+#cover{
+    transition: all .3s ease-in-out;
+}
+
+#cover img{
+    height: 6vw;
+    margin-right: 10px;
+    margin-bottom: 40px;
+
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    user-select:none;
+
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.info-head{
+    font-family: Dejavu;
+    font-style: italic;
+    color: white;
+    font-size: 0.8em;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.info-text{
+    font-family: Dejavu;
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 2;
+    opacity: 0.8;
+}
+
+.info-text p{
+    display: inline-block;
+    color: white;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+#wrapper{
+    background-color: transparent;
+    display: block;
+    transition: all .5s ease-in-out;
+}
+
+#info{
+    font-family: Bodoni;
+    color: white;
+    color: rgb(167, 167, 167);
+
+    font-size: 0.8em;
+    line-height: 1.6;
+    padding: 5%;
+    opacity: none;
+    opacity: 0;
+}
+
+.titleCover{
+    display: flow-root;
+}
+
+#logo_w_D{
+    height: 40px;
+}
+
+#logo_w_Dsemi{
+    height: 60px;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+.underlineWrap{
+	border: 2px solid white;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+	width: 100%;
+	height: 40px;
+	position: relative;
+
+	overflow: hidden;
+}
+.countWrap-white{
+	color: white;
+}
+
+.countWrap-black{
+	position: relative;
+	z-index: 4;
+	width: 300%;
+	
+	color: black;
+}
+.countWrap::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.underline{
+	width: 0%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 40px;
+	background-color: white;
+	transition: all .3s ease-in-out;
+	overflow: hidden;
+}
+
+.underlineWrap p, .underlineWrap span{
+	font-family: Bodoni;
+	float: left;
+	line-height: 40px;
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+footer{
+    position: absolute;
+    font-family: Dejavu;
+    opacity: 0.5;
+
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+/* isFulled------------------------ */
+/*
+#wrapper{
+	background-color: black;
+}
+#cover{
+    display: none;
+}
+#info{
+    display: block;
+    opacity: 1;
+} 
+*/
+
+
+@media screen and (max-width: 600px) {
+    #cover img{
+        height: 10vh;
+    }
+
+    #wrapper{
+        width: 80%;
+        height: 90vh;
+        margin: 5vh auto;
+    }
+  }

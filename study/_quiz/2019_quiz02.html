@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--가로로 이어진(?) 레이아웃 디자인 -->
+<!--
+	** 내용은 크게 신경쓰지 말고 왼쪽에 리스트? 카테고리 등이 들어올 수 있고
+	오른쪽에 내용들이 들어올 수 있는 레이아웃 만들기
+-->
+
+<head>
+	<meta charset="UTF-8">
+	<title>2019.02.20 Quiz</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;
+		}
+
+		body {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5e5e5e+0,161616+100 */
+			background: rgb(94, 94, 94);
+			/* Old browsers */
+			background: -moz-linear-gradient(-45deg, rgba(94, 94, 94, 1) 0%, rgba(22, 22, 22, 1) 100%);
+			/* FF3.6-15 */
+			background: -webkit-linear-gradient(-45deg, rgba(94, 94, 94, 1) 0%, rgba(22, 22, 22, 1) 100%);
+			/* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(135deg, rgba(94, 94, 94, 1) 0%, rgba(22, 22, 22, 1) 100%);
+			/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5e5e5e', endColorstr='#161616', GradientType=1);
+			/* IE6-9 fallback on horizontal gradient */
+			height: 100vh;
+			color: white;
+		}
+
+		.con {
+			width: 80%;
+/*			border: 1px solid white;*/
+			margin: auto;
+		}
+
+		.discript {
+			font-size: 10px;
+			padding: 10px 0;
+			border-bottom: 0.5px solid white;
+		}
+
+		.discript h1 {
+			line-height: 2;
+		}
+
+		/* layout deisgn----------------------------------- */
+		.layout-wrap{
+			display: flow-root;
+		}
+		
+		.layout {
+			
+			float: left;
+			padding: 20px 0;
+		}
+
+		.layout-01 {
+			width: 25%;
+		}
+
+		.layout-02 {
+			width: 75%;
+		}
+
+
+		/* layout01 design */
+		.listHead{
+			font-size: 12px;
+			font-weight: bolder;
+			text-decoration: underline;
+			margin-bottom: 4px;
+			
+		}
+		.layout-01 ul{
+			font-size: 10px;
+			opacity: 0.5;
+			font-weight: normal;
+			line-height: 2;
+			margin-bottom: 20px;
+		}
+		.layout-01 li{
+			font-weight: 100;
+		}
+
+		/* layout02 design */
+		.layout-02{
+			display: flow-root;
+		}
+		.card{
+			width: 33.3%;
+			height: 200px;
+
+			background-color: azure;
+			color: rgb(46, 46, 46);
+			float: left;
+			border: 0.5px solid rgb(46, 46, 46);
+			padding: 10px;
+			box-sizing: border-box;
+			font-size: 12pt;
+
+			transition: all .2s ease-in-out;
+		}
+
+		.card:hover{
+			background-color: transparent;
+			color: azure;
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="con">
+		<div class="discript">
+			<h1>2019.02.20 Quiz</h1>
+			<p>- simple layout design</p>
+		</div>
+		<section class="layout-wrap">
+			<div class="layout layout-01">
+				<p class="listHead">title 01</p>
+				<ul>
+					<li>Lorem, ipsum dolor.</li>
+					<li>Nulla, suscipit animi!</li>
+					<li>Maxime, molestias ratione!</li>
+					<li>Sit, eligendi voluptatum?</li>
+					<li>Fuga, quaerat dolorum.</li>
+				</ul>
+
+				<p class="listHead">title 01</p>
+				<ul>
+					<li>Lorem, ipsum dolor.</li>
+					<li>Nulla, suscipit animi!</li>
+					<li>Maxime, molestias ratione!</li>
+				</ul>
+			</div>
+			<div class="layout layout-02">
+				<ul>
+					<li class="card">
+						<h3>title</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, iure.</p>
+					</li>
+					<li class="card">
+						<h3>title</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, iure.</p>
+					</li>
+					<li class="card">
+						<h3>title</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, iure.</p>
+					</li>
+					<li class="card">
+						<h3>title</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, iure.</p>
+					</li>
+					<li class="card">
+						<h3>title</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, iure.</p>
+					</li>
+					<li class="card">
+						<h3>title</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, iure.</p>
+					</li>
+					<li class="card">
+						<h3>title</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, iure.</p>
+					</li>
+					<li class="card">
+						<h3>title</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, iure.</p>
+					</li>
+					<li class="card">
+						<h3>title</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, iure.</p>
+					</li>
+				</ul>
+				
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>
