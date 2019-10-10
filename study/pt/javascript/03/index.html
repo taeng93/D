@@ -3,60 +3,18 @@
 
 <head>
 	<title>D; javascript study</title>
-
-	<!-- meta  -->
+  <!-- meta  -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<style>
-		/* default */
-		*{
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			text-decoration: none;
-		}
-
-		body{
-			background-color: rgb(243, 243, 243);
-		}
-
-		.con{
-			width: 70%;
-			margin: auto;
-            position: relative;
-		}
-
-		header{
-			padding: 50px 0 30px 0;
-		}
-
-		header .con{
-			border-bottom: 1px solid black;
-		}
-
-		header h1{
-			padding-bottom: 10px;
-		}
-
-		header p{
-			color: gray;
-			line-height: 1.5;
-			padding-bottom: 20px;
-		}
-
-		/* add style */
-    body{
-      background-color: black;
-      color: white;
-    }
-
-
-	</style>
+  <!-- link -->
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
 	<header>
 		<div class="con">
 			<h1>javascript study 03</h1>
@@ -64,18 +22,22 @@
 		</div>
 	</header>
 
-	<section>
+	<section class="sec-clock">
 		<div class="con">
-      <h1 class="clock">00:00</h1>
-      <p class="greeting">good evening, taewoong</p>
-      <form class="form">
+      <!-- 시간 가져오기 -->
+      <h1 class="clock js-clock">00:00</h1>
+
+      <p class="greeting js-greeting">good evening, taewoong</p>
+
+      <form class="js-form form">
         <label for="user-name">what's your name</label>
         <input type="text" id="user-name">
       </form>
     </div>
-    
-    
   </section>
+
+  <script src="js/clock.js"></script>
+  <script src="js/greeting.js"></script>
   
 </body>
 
