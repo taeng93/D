@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: bisque;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.wrap {
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 80px;
+    /* border: 1px solid black; */
+}
+
+.tamago {
+    width: 450px;
+    height: 550px;
+    background-color: white;
+    border: 5px solid rgb(243, 243, 243);
+    border-radius: 50% 50% 48% 48%/60% 60% 40% 40%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: rgb(238, 212, 180) 0 5px 20px;
+    overflow: hidden;
+}
+
+.window{
+    position: absolute;
+    top: 150px;
+    width: 280px;
+    height: 250px;
+    border: 5px solid rgb(243, 243, 243);
+    background-color: rgb(155, 215, 235);
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.start{
+    background-color:rgb(61, 61, 61);
+    width: 280px;
+    height: 250px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: all ease-in-out 0.2s;
+    /* overflow: hidden; */
+}
+
+.glass{
+    position: absolute;
+    top: -80px;
+    left: 10px;
+    background-color: white;
+    opacity: 0.4;
+    width: 150px;
+    height: 500px;
+    transform: rotate(45deg);
+}
+
+.none {
+    background-color: rgb(58, 58, 58);
+    width: 280px;
+    height: 250px;
+}
+
+.animals{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 120px;
+}
+
+.shadow{
+    margin: 0 auto;
+    margin-top: -10px;
+    width: 80px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(121, 193, 218);
+}
+
+.form ul{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    opacity: 0.8;
+    padding: 0 15px;
+}
+
+
+.form li{
+    display: flex;
+    margin: 10px 0;
+    width: 33.3%;
+
+}
+
+.animal{
+    width: 100%;
+    text-align: center;
+}
+.state{
+    width: 100%;
+    text-align: right;
+}
+
+.form h1,p{
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+.zig-zag {
+    position: absolute;
+    bottom: 180px;
+    border: none;
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 40px;
+    background: linear-gradient(135deg, rgb(255, 255, 255) 25%, transparent 25%) -20px 0,
+    linear-gradient(225deg, rgb(255, 255, 255) 25%, transparent 25%) -20px 0,
+    linear-gradient(315deg, rgb(255, 255, 255) 25%, transparent 25%),
+    linear-gradient(45deg, rgb(255, 255, 255) 25%, transparent 25%);
+    background-size: 40px 40px;
+    background-color: rgb(243, 243, 243);
+}
+
+
+.button-wrap{
+    position: absolute;
+    width: 220px;
+    bottom: 60px;
+    /* border: 1px solid black; */
+}
+
+.button-list{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.button{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: grab;
+    transition: all .2s ease-in-out;
+    /* border: 1px solid blue; */
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+.first{
+    background-color: rgb(255, 189, 189);
+    border: 5px solid rgb(255, 181, 181);
+    box-shadow: rgb(212, 212, 212) 0 0px 5px;
+    box-sizing: border-box;
+}
+
+.second{
+    bottom: -20px;
+    background-color: rgb(255, 211, 161);
+    border: 5px solid rgb(248, 202, 150);
+    box-shadow: rgb(212, 212, 212) 0 0px 5px;
+    box-sizing: border-box;
+}
+
+.third{
+    background-color: rgb(175, 230, 255);
+    border: 5px solid rgb(167, 227, 255);
+    box-shadow: rgb(212, 212, 212) 0 0px 5px;
+    box-sizing: border-box;
+}
+
+img.vert-move {
+    -webkit-animation: mover 0.5s infinite  alternate;
+    animation: mover 0.5s infinite  alternate;
+}
+img.vert-move {
+    -webkit-animation: mover 0.5s infinite  alternate;
+    animation: mover 0.5s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}

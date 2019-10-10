@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MapleStory</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .bg-color {
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+
+        }
+
+        .con {
+            background-image: url(bg.PNG);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: auto;
+            height: 100vh;
+
+        }
+
+        .information {
+            left: 40.5vw;
+            top: 20vh;
+            width: 15vw;
+            height: 15vw;
+            background-repeat: no-repeat;
+            /*
+            
+            background-color: blue;
+*/
+            background-image: url(information.png);
+            background-size: contain;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .t {
+            padding-bottom: .35vh;
+            font-size: 15px;
+        }
+
+        .left-align {
+            padding-top: 3.8vh;
+            padding-left: 4vw;
+            display: inline-block;
+            width: 100px;
+        }
+
+        .right-align {
+            position: absolute;
+            margin-top: 6.2vh;
+
+            display: inline-block;
+            width: 100px;
+        }
+
+        .rank {
+            text-align: right;
+            width: 6vw;
+            padding-top: 3vh;
+
+        }
+
+        .worldlank {
+            padding-top: 2.4vh;
+        }
+
+        .character {}
+
+        .seomin {
+
+            margin-left: 35vw;
+            margin-top: 50vh;
+            width: 6vw;
+            height: 11vh;
+            position: absolute;
+            z-index: 1.5;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url(seomin.png);
+
+        }
+
+        .elf {
+            margin-left: 45.5vw;
+            margin-top: 50vh;
+            width: 6vw;
+            height: 11vh;
+            position: absolute;
+            z-index: 1.5;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url(elf.png);
+
+        }
+
+        .demon {
+            margin-left: 57vw;
+            margin-top: 50vh;
+            width: 7vw;
+            height: 12vh;
+            position: absolute;
+            z-index: 1.5;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url(demon.png);
+
+        }
+
+        .border-test{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-color">
+        <div class="character border-test">
+            <div class="seomin">
+
+            </div>
+            <div class="elf">
+
+            </div>
+            <div class="demon">
+
+            </div>
+        </div>
+        <div class="con">
+            <div class="information">
+                <div class="left-align">
+                    <p class="t job">
+                        job
+                    </p>
+
+                    <p class="t level">
+                        level
+                    </p>
+                    <p class="t str">
+                        str
+                    </p>
+                    <p class="t dex">
+                        dex
+                    </p>
+                </div>
+
+                <div class="right-align">
+                    <p class="t popularity">
+                        popularity
+                    </p>
+
+
+                    <p class="t int">
+                        int
+                    </p>
+
+                    <p class="t luk">
+                        luk
+                </div>
+
+                <div class="rank">
+                    <p class="t allrank">
+                        allrank
+                    </p>
+                    <p class="t worldlank">
+                        worldlank
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        const seomin = {
+            "id" : "seomin",
+            "job": "서민",
+            "level": "150",
+            "str": "1444",
+            "dex": "4",
+            "popularity": "666",
+            "int": "4",
+            "luk": "777"
+        };
+        const elf = {
+            "id" : "elf",
+            "job": "엘프",
+            "level": "200",
+            "str": "4",
+            "dex": "1222",
+            "popularity": "7777",
+            "int": "20",
+            "luk": "10"
+        };
+        const demon = {
+            "id" : "demon",
+            "job": "데몬",
+            "level": "200",
+            "str": "1878",
+            "dex": "4",
+            "popularity": "50",
+            "int": "4",
+            "luk": "4"
+        };
+
+        const listArr = [seomin, elf, demon];
+     
+        function handleClick(e) {
+            for (let i = 0; i < listArr.length; i++) {
+                if (listArr[i].id == e.target.className) {
+                    
+                    job.innerHTML = listArr[i].job;
+                    level.innerHTML = listArr[i].level;
+                    str.innerHTML = listArr[i].str;
+                    dex.innerHTML = listArr[i].dex;
+                    popularity.innerHTML = listArr[i].popularity;
+                    int.innerHTML = listArr[i].int;
+                    luk.innerHTML = listArr[i].luk;
+                    
+                }
+            }
+
+        }
+        const character1 = document.querySelector('.seomin');
+        character1.addEventListener('click', handleClick);
+        
+        const character2 = document.querySelector('.elf');
+        character2.addEventListener('click', handleClick);
+        
+        const character3 = document.querySelector('.demon');
+        character3.addEventListener('click', handleClick);
+
+        const job = document.querySelector('.job');
+        const level = document.querySelector('.level');
+        const str = document.querySelector('.str');
+        const dex = document.querySelector('.dex');
+        const popularity = document.querySelector('.popularity');
+        const int = document.querySelector('.int');
+        const luk = document.querySelector('.luk');
+
+        
+    </script>
+
+</body></html>

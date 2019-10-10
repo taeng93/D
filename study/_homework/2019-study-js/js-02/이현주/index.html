@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>animals</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <div class="tamago">
+            <div class="zig-zag"></div>
+            <div class="window">
+                <div class="start">
+                    <div class="glass"></div>
+                </div>
+                <div class="form">
+                    <ul>
+                        <li>
+                            <h1>LV.</h1>
+                            <p class="level">00</p>   
+                        </li>
+                        <li>
+                            <p class="animal">ANIMAL</p>
+                        </li>
+                        <li>
+                            <p class="state">STATE</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="animals">
+                    <img src="animal-01.svg" alt="" class="animalImg vert-move">
+                    <div class="shadow"></div>
+                </div>
+            </div>
+            <div class="button-wrap">
+                <ul class="button-list">
+                    <li class="button first"></li>
+                    <li class="button second"></li>
+                    <li class="button third"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        const start = document.querySelector(".start");
+
+        const bunny = {
+            "name" : "first",
+            "level" : "30",
+            "animal" : "BUNNY",
+            "state" : "FULL",
+            "img": "animal-01.svg"
+        }
+
+        const chick = {
+            "name" : "second",
+            "level" : "15",
+            "animal" : "CHICK",
+            "state" : "HUNGRY",
+            "img": "animal-02.svg"
+        }
+
+        const bear = {
+            "name" : "third",
+            "level" : "01",
+            "animal" : "BEAR",
+            "state" : "NOMAL",
+            "img": "animal-03.svg"
+        }
+
+        const lists = [bunny, chick, bear];
+
+        function handleForm(e){
+            // console.dir(e.target)
+            start.style.opacity = 0;
+            console.dir(start);
+            const target = e.target.classList[1];
+            for(let i=0; i< lists.length; i++){
+                if(lists[i].name == target){
+                    changeForm(lists[i]);
+                }
+            }
+        }
+
+        function changeForm(animal){
+            document.querySelector('.level').innerHTML = animal.level;
+            document.querySelector('.animal').innerHTML = animal.animal;
+            document.querySelector('.state').innerHTML = animal.state;
+            document.querySelector('.animalImg').src = animal.img;
+        }
+
+
+        const target = document.querySelector('.button-list');
+        target.addEventListener('click', handleForm);
+      
+
+    </script>
+</body>
+</html>
