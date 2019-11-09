@@ -41,3 +41,46 @@ body{
 .showing{
   display: block;
 }
+
+.todo{
+  text-align: center;
+}
+
+.todo input[type="text"]{
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  color: white;
+  outline: none;
+  text-transform: capitalize;
+  width: 40%;
+}
+
+.todoLists{
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todoLists li{
+  width: 40%;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px 0;
+  transition: all .3s ease-out;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+.todoLists li:hover{
+  background-color: white;
+  color: black;
+  text-decoration-line: line-through;
+}

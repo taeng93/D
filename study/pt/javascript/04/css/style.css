@@ -1,0 +1,47 @@
+/* add style */
+body{
+  background-color: black;
+  color: white;
+}
+
+.sec-clock{
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.clock{
+  text-align: center;
+  font-size: 5rem;
+}
+.greeting{
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 0;
+
+}
+
+.form{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.form input{
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  color: white;
+}
+
+.form, .greeting{
+  display: none;
+}
+
+.showing{
+  display: block;
+}
+
+.todoForm input{
+  font-size: 2rem;
+}
