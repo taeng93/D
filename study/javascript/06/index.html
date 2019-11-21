@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>D; javascript study</title>
+  <!-- meta  -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- link -->
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="con">
+			<h1>javascript study 05</h1>
+			<p>D; javascript study 05 / delete  </p>
+		</div>
+	</header>
+
+	<section class="sec-clock">
+		<div class="con">
+      <!-- 시간 가져오기 -->
+      <h1 class="clock js-clock">00:00</h1>
+
+      <!-- 로컬저장소에 이름이 있을때 보여줄 텍스트 -->
+      <p class="greeting js-greeting">good evening, taewoong</p>
+
+      <!-- 로컬 저장소에 이름이 없을때 물어보기 -->
+      <form class="js-form form">
+        <label for="user-name">what's your name</label>
+        <input type="text" id="user-name">
+      </form>
+
+      <!--todo list 추가 -->
+      <form class = "js-todoForm todoForm">
+        <input type="text" placeholder="type your to do">
+      </form>
+
+      <!-- 보여줄 투두 리스트 -->
+      <ul class="js-todos todos">
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- script: 기능별로 나눠서 정리 -->
+  <script src="js/clock.js"></script>
+  <script src="js/greeting.js"></script>
+  <script src="js/todo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+/* add style */
+body{
+  background-color: black;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  /* background-image: url('https://images.unsplash.com/photo-1573677800239-e152524c97e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80'); */
+}
+
+.sec-clock{
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.clock{
+  text-align: center;
+  font-size: 5rem;
+}
+.greeting{
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 0;
+
+}
+
+.form{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.form input{
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  color: white;
+}
+
+.form, .greeting{
+  display: none;
+}
+
+.showing{
+  display: block;
+}
+
+.todoForm input{
+  font-size: 2rem;
+}
