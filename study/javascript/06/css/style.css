@@ -2,6 +2,20 @@
 body{
   background-color: black;
   color: white;
+  /* background-image: url('../images/1.jpg'); */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 .sec-clock{
@@ -78,4 +92,19 @@ body{
   cursor: pointer;
   background-color: white;
   color: black;
+}
+
+
+.weather-temp{
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.weather-temp span{
+  font-weight: normal;
+  opacity: .5;
+}
+
+.weather-temp .js-temp{
+  opacity: 1;
 }

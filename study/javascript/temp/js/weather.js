@@ -5,6 +5,10 @@ saveCoords = coordsObj => {
  localStorage.setItem(COORDS, JSON.stringify(coordsObj));
 }
 
+function getWeather(lat, lng){
+ // fetch(`api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}`)
+
+}
 
 handleGeoSucces = position => {
  console.log(position);
@@ -31,7 +35,9 @@ loadCoord = () =>{
  if(!loadCords){
   askForCoords();
  }else{
-  // get weather
+
+  console.log(JSON.parse(loadCords));
+  // getWeather();
  }
 }
 
